@@ -13,7 +13,7 @@
         return answer;
     }
 
-    let arr=[5, 7, 4, 3, 5, 9, 11];
+    let arr=[5, 7, 4, 3, 5, 9, 11123123];
     console.log(solution(arr));
 </script>
 </body>
