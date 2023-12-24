@@ -11,7 +11,7 @@
         s = s.toLowerCase();
 
         for (let i = 0; i < s.length; i++) {
-            if (s.charAt(i) !== s.charAt(s.length - (i + 1))) {
+            if (s.charAt(i) !== s.charAt(s.length - (i + 1))) { // 정배열 역배열 비교
                 return answer = "NO";
             }
         }
