@@ -12,12 +12,11 @@
         s = s.replaceAll(',', '');
         s = s.replaceAll(':', '');
         s = s.replaceAll(/[0-9]/g, '');
-        s = s.toUpperCase();
+        s = s.toLowerCase();
 
         for (let i = 0; i < s.length; i++) {
             if (s.charAt(i) !== s.charAt(s.length - (i + 1))) {
-                answer = "NO";
-                return answer
+                return answer = "NO";
             }
         }
 
