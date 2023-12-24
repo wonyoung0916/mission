@@ -7,11 +7,7 @@
 <script>
     function solution(s){
         let answer="YES";
-        s = s.replaceAll(' ', '');
-        s = s.replaceAll(';', '');
-        s = s.replaceAll(',', '');
-        s = s.replaceAll(':', '');
-        s = s.replaceAll(/[0-9]/g, '');
+        s = s.replaceAll(/[^a-zA-Z]/g, "");
         s = s.toLowerCase();
 
         for (let i = 0; i < s.length; i++) {
